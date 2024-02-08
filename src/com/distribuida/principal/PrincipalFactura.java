@@ -64,8 +64,15 @@ public class PrincipalFactura {
 //		System.out.println("Max ID: " + maxId);
 		    
 		//findOne(numerofactura)
-		int factura = facturaDAO.findOne("F2023005");
-		System.out.println("Factura encontrada: " + factura);
+//		int factura = facturaDAO.findOne("F2023005");
+//		System.out.println("Factura encontrada: " + factura);
+		
+	    List<Factura> facturasEncontradas = facturaDAO.findAll("2023");
+
+        for (Factura factura : facturasEncontradas) {
+            System.out.println("Factura: " + factura.getNumFactura());
+     
+        }
 		
 		context.close();
 	}

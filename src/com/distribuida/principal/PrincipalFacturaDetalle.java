@@ -51,7 +51,7 @@ public class PrincipalFacturaDetalle {
 //		facturadetalleDAO.up(facturadetalle1);
 		
 		//del
-		facturadetalleDAO.del(16);
+//		facturadetalleDAO.del(16);
 		
 		context.close();
 	}

@@ -42,6 +42,14 @@ public class PrincipalFacturaDTO {
 	    // Probar findOne por número
 //	    int id = facturaservice.findOne("F2023006");
 //	    System.out.println("ID Factura: " + id);
+	    
+	    //findAll(busqueda) por parametros
+        List<Factura> facturasEncontradas = facturaservice.findAll("11");
+
+    
+        for (Factura factura : facturasEncontradas) {
+            System.out.println("Número de factura: " + factura.getNumFactura());
+        }
 		
 		context.close();
 	}

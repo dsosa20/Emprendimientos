@@ -92,4 +92,10 @@ public class FacturaServiceImpl implements FacturaService {
 		return facturaDAO.findOne(numFactura);
 	}
 
+	@Override
+	public List<Factura> findAll(String busqueda) {
+		// TODO Auto-generated method stub
+		return facturaDAO.findAll(busqueda);
+	}
+
 }

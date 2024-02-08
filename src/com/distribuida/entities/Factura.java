@@ -48,7 +48,7 @@ public class Factura {
 	@JoinColumn(name="fk_idFormaPago")
 	private FormaPago formaPago;
 	
-	
+
 	public Factura(int idFactura, String numFactura, Date fechaFactura, double totalNeto, double iva, double total) {
 		this.idFactura = idFactura;
 		this.numFactura = numFactura;
